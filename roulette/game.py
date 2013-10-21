@@ -21,6 +21,7 @@ class Game(object):
     def cycle(self, player):
         self.player = player
         selected_bin = self.wheel.next()
+        print "selected bin: ", selected_bin
         outcomes = selected_bin.outcomes
         i = iter(self.table)
         while 1:
